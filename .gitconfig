@@ -16,17 +16,16 @@
 	frag = magenta bold
 	new = green bold
 [core]
-	excludesfile = ~/dotfiles/gitignore_global
 	editor = vim
 [merge]
 	tool = ediff
 	log = true
 [alias]
 	st = status -sb
-  br = branch
-  co = checkout
-	ci = commit -v -s
-	commit = commit -v -s
+        br = branch
+        co = checkout
+	ci = commit -v
+	commit = commit -v
 	up = pull --ff-only --all -p
 	who = blame
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
