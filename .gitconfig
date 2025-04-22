@@ -1,6 +1,7 @@
 [user]
 	name = Felipe Oliveira
-	email = fpo@felipeweb.dev
+	email = felipe@funccloud.com
+	signingkey = /home/felipe/.ssh/id_ed25519.pub
 [github]
 	user = felipeweb
 [color]
@@ -16,14 +17,14 @@
 	frag = magenta bold
 	new = green bold
 [core]
-	editor = vim
+	editor = code --wait
 [merge]
 	tool = ediff
 	log = true
 [alias]
 	st = status -sb
-        br = branch
-        co = checkout
+    br = branch
+    co = checkout
 	ci = commit -v
 	commit = commit -v
 	up = pull --ff-only --all -p
@@ -51,11 +52,18 @@
 	whitespace = fix
 [gpg]
 	program = gpg
+	format = ssh
 [commit]
 	verbose = true
+	gpgsign = true.
 [branch]
 	autosetuprebase = always
 [help]
 	autocorrect = 1
 [url "https://github.com/"]
 	insteadOf = git://github.com/
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
