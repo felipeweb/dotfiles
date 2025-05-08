@@ -23,8 +23,8 @@
 	log = true
 [alias]
 	st = status -sb
-    br = branch
-    co = checkout
+        br = branch
+        co = checkout
 	ci = commit -v
 	commit = commit -v
 	up = pull --ff-only --all -p
@@ -55,7 +55,7 @@
 	format = ssh
 [commit]
 	verbose = true
-	gpgsign = true.
+	gpgsign = true
 [branch]
 	autosetuprebase = always
 [help]
